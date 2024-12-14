@@ -1,0 +1,52 @@
+.dashboard {
+    width: 100%;
+    height: 100vh;
+    background-color: #456939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 95%;
+        height: 95%;
+        border-radius: 5px;
+        display: flex;
+        overflow: hidden;
+        background-color: #1c2817;
+    }
+
+    &__side-menu {
+        padding: 50px 16px;
+    }
+
+    &__menu-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 7px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: rgb(243, 172, 40);
+        }
+    }
+
+    &__menu-icon {
+        font-size: 15px;
+        color: white;
+    }
+
+    &__menu-text {
+        font-size: 15px;
+        color: white;
+        margin-left: 8px;
+    }
+
+    &__content {
+        width: 70%;
+        margin: 15px;
+        border-radius: 5px;
+        background-color: white;
+    }
+}

@@ -1,0 +1,31 @@
+.general {
+    width: 100%;
+    height: 100%;
+    
+    &__row {
+        display: flex;
+        height: 50%;
+        justify-content: space-between;
+    }
+      
+    &__card {
+        flex: 1;
+        margin: 10px;
+        background-color: rgb(243, 172, 40);
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        & p:nth-child(1) {
+            font-size: 20px;
+        }
+        
+        & p:nth-child(2) {
+            font-size: 40px;
+        }
+    }
+}

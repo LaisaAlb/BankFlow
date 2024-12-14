@@ -1,0 +1,41 @@
+.not-authorized {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 95%;
+        height: 95%;
+        background-color: #456939;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 50%;
+        color: #e0b7b7;
+    }
+
+    &__button {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        color: white;
+        background: linear-gradient(279deg, rgb(32 62 27 / 86%) 4%, rgb(69, 105, 57) 35%, rgb(111, 146, 101) 74%);
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 13px;
+        cursor: pointer;
+        position: relative;
+
+        &:active {
+            top: 3px;
+        }
+    }
+}

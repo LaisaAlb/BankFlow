@@ -1,0 +1,38 @@
+.payments {
+    padding: 20px;
+    &__title {
+        font-size: 22px;
+    }
+
+    &__description {
+        font-size: 16px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+    }
+
+    &__button {
+        width: 40%;
+        padding: 5px;
+        border: none;
+        color: white;
+        background: linear-gradient(279deg, rgb(32 62 27 / 86%) 4%, rgb(69, 105, 57) 35%, rgb(111, 146, 101) 74%);
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 13px;
+        cursor: pointer;
+        position: relative;
+
+        &:active {
+            top: 3px;
+        }
+    }
+
+    &__blocked-message {
+        color: #e14141;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,15 @@
+<div class="payments">
+    <h1 class="payments__title poppins-semibold">Pagamentos:</h1>
+    <p class="payments__description poppins-light">Aqui você pode ver os pagamentos da sua conta:</p>
+
+    <div class="payments__buttons">
+        <button class="payments__button" (click)="navigate('debit')">Débito</button>
+        <button class="payments__button" (click)="navigate('credit')">Crédito</button>
+        <button class="payments__button" (click)="navigate('contacts')">Contatos</button>
+    </div>
+    <router-outlet></router-outlet>
+
+    @if(isWalletBlocked) {
+        <p class="poppins-regular payments__blocked-message">A sua conta está bloqueada, são será possível acessar as funcionalidades de crédito e débito.</p>
+    }
+</div>
